@@ -14,3 +14,10 @@ npm start
 
 ## 客户端
 前端代码基于vue，逻辑很简单，主要用来练手vue的使用。前端代码在[client目录](./client)下。
+服务器启动后
+```
+cd client
+npm install
+npm run dev
+```
+即可看到客户端展示出豆瓣电影前十的页面效果
