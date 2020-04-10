@@ -1,7 +1,7 @@
 <template>
     <div id="movie">
       <ul>
-        <li v-for="movie in movieData">
+        <li v-for="movie in movieData" :key="movie.name">
           <h2><a :href="movie.link">{{ movie.name }}</a></h2>
           <img :src="movie.picUrl" />
           <p>{{ movie.info }}</p>
@@ -28,7 +28,8 @@ export default {
       var self = this
       axios.get('http://127.0.0.1:8888/movie-data')
         .then(function (res) {
-          self.movieData = res.data
+          self.movieData = res.data.data
+          console.log(self.movieData)
         })
         .catch(function (err) {
           console.error(err)
