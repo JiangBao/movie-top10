@@ -1,0 +1,161 @@
+@import '~antd/dist/antd.css';
+
+* {
+  box-sizing: border-box;
+}
+
+h1,h2,p {
+  margin: 0;
+  white-space: pre-line;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card {
+  display: block;
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: #FFF;
+  transition: all 0.2s;
+}
+
+.card:hover {
+  box-shadow: 2px 2px 4px 4px rgba(0,0,0,0.1);
+}
+
+.movie-card:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.movie-card img {
+  float: left;
+  width: 100px;
+  height: 148px;
+  margin-right: 1rem;
+}
+
+.movie-card h2 {
+  font-size: 1.5rem;
+  color: #27A;
+  font-weight: 500;
+}
+
+.movie-card p {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.app-header {
+  text-align: center;
+  padding: 1rem;
+  color: #27A;
+  background-color: #FFF;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  box-shadow: 0 1px 3px rgba(26,26,26,.1);
+}
+
+.app-header h1 {
+  color: #27A;
+}
+
+.app-content-list {
+  float: left;
+  width: 70%;
+}
+
+.app-sidebar {
+  width: 30%;
+  font-size: 0.9rem;
+  color: #555;
+  position: fixed;
+  left: 70%;
+  padding: 0 1rem;
+}
+
+.app-sidebar .douban-card {
+  text-align: center;
+}
+
+.app-content {
+  padding: 0 1rem;
+  margin-top: 4.5rem;
+}
+
+.app-content:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.app-footer {
+  padding: 1.5rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #333;
+}
+
+@media screen and (max-width: 800px) {
+  .app-content-list,.app-sidebar {
+    width: 100%;
+  }
+  .app-sidebar {
+    padding-left: 0;
+    position: static;
+    float: left;
+  }
+  .card:hover {
+    box-shadow: none;
+  }
+  .movie-card img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */

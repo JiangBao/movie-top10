@@ -21,3 +21,4 @@ npm install
 npm run dev
 ```
 即可看到客户端展示出豆瓣电影TOP250的页面效果
+![demo](./assets/movie-top-react-client.png)
