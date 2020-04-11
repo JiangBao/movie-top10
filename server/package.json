@@ -1,14 +1,14 @@
 {
-  "name": "movie-top10-server",
-  "version": "1.0.0",
-  "description": "",
+  "name": "douban-movie-api",
+  "version": "1.1.0",
+  "description": "douban movie api",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
-    "dev-start": "supervisor app.js"
+    "dev": "supervisor app.js"
   },
-  "author": "",
+  "author": "JiangBao<jiangbao1123@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.18.1",

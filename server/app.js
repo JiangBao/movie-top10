@@ -1,16 +1,16 @@
 /**
  * entry
  */
-let express = require('express'),
-    routes = require('./routes/index.js');
+const express = require('express');
+const routes = require('./routes/index.js');
 
-let app = express();
-let port = process.env.PORT || 8888;
+const app = express();
+const port = process.env.PORT || 8888;
 
 // routes
 routes(app);
 
 // set port, logger start
 app.listen(port, () => {
-  console.log(`the server start success at port ${port}`);
-})
+  console.log(`the api server start success at http://localhost:${port}`);
+});

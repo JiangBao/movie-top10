@@ -22,7 +22,15 @@ const Router = (app) => {
    * @param  {object} res
    * @return {object}
    */
-  app.get('/movie-data', controller.handleGetMovieTop10)
+  app.get('/movie-data', controller.handleGetMovieTop10);
+
+  /**
+   * get movie data from douban by page
+   * @param  {object} req
+   * @param  {object} res
+   * @return {object}
+   */
+  app.get('/movie/top250/:page', controller.handleGetMovieTopByPage);
 }
 
 module.exports = Router;
