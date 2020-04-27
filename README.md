@@ -1,5 +1,5 @@
 # movie-top
-爬取豆瓣电影TOP250展示。
+爬取豆瓣电影TOP250展示。[DEMO](http://movie.u9c8d.com/)
 
 ## 服务器
 后端通过Node.js从[豆瓣电影top250](https://movie.douban.com/top250)爬取电影数据，并通过express给前端提供数据接口服务。后端代码在[server目录](./server)下。  
