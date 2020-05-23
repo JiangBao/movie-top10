@@ -22,7 +22,7 @@ jobs:
           node-version: "12.16.1"
       
       - name: Install Dependencies
-        run: cd client & npm install
+        run: cd /client && npm install
 
       - name: Build
         run: npm run build
