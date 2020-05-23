@@ -53,23 +53,23 @@ a {
 
 .app-header {
   text-align: center;
-  padding: 1rem;
-  color: #27A;
-  background-color: #FFF;
+  padding: 0.8rem;
+  background-color: #27A;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1;
-  box-shadow: 0 1px 3px rgba(26,26,26,.1);
+  box-shadow: 0 5px 3px rgba(26,26,26,.1);
 }
 
 .app-header h1 {
-  color: #27A;
+  color: #FFF;
 }
 
 .app-content-list {
   float: left;
   width: 70%;
+  padding-bottom: 2rem;
 }
 
 .app-sidebar {
@@ -82,12 +82,15 @@ a {
 }
 
 .app-sidebar .douban-card {
+  color: #FFF;
   text-align: center;
+  background-color: #27A;
 }
 
 .app-content {
   padding: 0 1rem;
   margin-top: 4.5rem;
+  min-height: 80vh;
 }
 
 .app-content:after {
@@ -97,10 +100,17 @@ a {
 }
 
 .app-footer {
-  padding: 1.5rem;
+  padding: 1rem;
+  margin-top: 1rem;
   text-align: center;
   font-size: 0.8rem;
   color: #333;
+}
+
+.ant-spin {
+  position: absolute;
+  left: 50%;
+  top: 50%;
 }
 
 @media screen and (max-width: 800px) {
@@ -119,43 +129,11 @@ a {
     width: 100%;
     height: 100%;
   }
-}
-
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .app-content {
+    padding: 0 1rem;
+  }
+  .app-sidebar .douban-card {
+    background-color: #FFF;
+    color: #555;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */

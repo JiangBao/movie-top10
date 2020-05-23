@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from './Footer.js';
 
 function Sidebar() {
   return (
@@ -12,6 +13,7 @@ function Sidebar() {
           <p>让好电影来找你</p>
         </a>
       </div>
+      <Footer />
     </div>
   )
 }

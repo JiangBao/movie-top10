@@ -1,7 +1,6 @@
 import React from 'react';
 import {BackTop} from 'antd';
 import Header from './components/Header';
-import Footer from './components/Footer';
 import Sidebar from './components/Sidebar';
 import ContentList from './components/ConentList';
 import './App.css';
@@ -18,9 +17,7 @@ function App() {
         <Sidebar />
       </div>
 
-      {/* footer area */}
-      <Footer />
-
+      {/* back to top */}
       <BackTop />
     </div>
   );
