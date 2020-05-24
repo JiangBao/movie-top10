@@ -35,14 +35,16 @@ jobs:
           npm install
 
       - name: Build
-        run: npm run build
+        run: |
+          cd client/
+          npm run build
 
       - name: Deploy to server
         uses: easingthemes/ssh-deploy@v2.0.7
         env:
           SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_TOKEN }}
           ARGS: "-rltgoDzvO --delete"
-          SOURCE: "./build/*"
+          SOURCE: "./client/build/*"
           REMOTE_HOST: ${{ secrets.SSH_HOST }}
           REMOTE_USER: ${{ secrets.SSH_USER }}
           TARGET: "/home/movie-top/client"
