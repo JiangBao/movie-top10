@@ -22,13 +22,15 @@ jobs:
           node-version: "12.16.1"
 
       - name: Show pwd
-        run: ls
+        run: |
+          ls
+          pwd
+
+      - name: Go to client dir
+        run: cd client/
       
       - name: Install Dependencies
-        run: cd /client && npm install
-
-      - name: Show pwd
-        run: ls
+        run: npm install
 
       - name: Build
         run: npm run build
