@@ -12,7 +12,7 @@ function ContentList() {
   useEffect(() => {
     setLoading(true);
     window.scrollTo(0, 0);
-    axios.get(`http://localhost:8888/movie/top250/${page}`)
+    axios.get(`http://movie.u9c8d.com/movie/top250/${page}`)
       .then((resp) => {
         if (resp.data.status === 200) {
           setLoading(false);
