@@ -20,9 +20,15 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: "12.16.1"
+
+      - name: Show pwd
+        run: ls
       
       - name: Install Dependencies
         run: cd /client && npm install
+
+      - name: Show pwd
+        run: ls
 
       - name: Build
         run: npm run build
